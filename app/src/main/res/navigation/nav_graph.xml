@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentOne">
+
+    <fragment
+        android:id="@+id/fragmentOne"
+        android:name="com.example.navigation.fragment.FragmentOne"
+        android:label="FragmentOne"
+        tools:layout="@layout/fragment_one">
+
+        <argument
+            android:name="pageNumber"
+            app:argType="string"
+            android:defaultValue="One"/>
+
+        <action
+            android:id="@+id/action_one_to_two"
+            app:destination="@id/fragmentTwo"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentTwo"
+        android:name="com.example.navigation.fragment.FragmenTwo"
+        android:label="FragmentTwo"
+        tools:layout="@layout/fragment_two">
+
+        <argument
+            android:name="pageNumber"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_two_to_three"
+            app:destination="@id/fragmentThree"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentThree"
+        android:name="com.example.navigation.fragment.FragmentThree"
+        android:label="FragmentOne"
+        tools:layout="@layout/fragment_three">
+
+        <argument
+            android:name="pageNumber"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_three_to_four"
+            app:destination="@id/fragmentFour"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentFour"
+        android:name="com.example.navigation.fragment.FragmentFour"
+        android:label="FragmentFour"
+        tools:layout="@layout/fragment_four">
+
+        <argument
+            android:name="pageNumber"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_four_to_five"
+            app:destination="@id/fragmentFive"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentFive"
+        android:name="com.example.navigation.fragment.FragmentFive"
+        android:label="FragmentFive"
+        tools:layout="@layout/fragment_five">
+
+        <argument
+            android:name="pageNumber"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_five_to_six"
+            app:destination="@id/fragmentSix"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSix"
+        android:name="com.example.navigation.fragment.FragmentSix"
+        android:label="FragmentSix"
+        tools:layout="@layout/fragment_six">
+
+        <argument
+            android:name="pageNumber"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_six_to_seven"
+            app:destination="@id/fragmentSeven"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSeven"
+        android:name="com.example.navigation.fragment.FragmentSeven"
+        android:label="FragmentSeven"
+        tools:layout="@layout/fragment_seven">
+
+        <argument
+            android:name="pageNumber"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_seven_to_eight"
+            app:destination="@id/fragmentEight"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentEight"
+        android:name="com.example.navigation.fragment.FragmentEight"
+        android:label="FragmentEight"
+        tools:layout="@layout/fragment_eight">
+
+        <argument
+            android:name="pageNumber"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_eight_to_nine"
+            app:destination="@id/fragmentNine"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentNine"
+        android:name="com.example.navigation.fragment.FragmentNine"
+        android:label="FragmentNine"
+        tools:layout="@layout/fragment_nine">
+
+        <argument
+            android:name="pageNumber"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_nine_to_ten"
+            app:destination="@id/fragmentTen"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentTen"
+        android:name="com.example.navigation.fragment.FragmentTen"
+        android:label="FragmentTen"
+        tools:layout="@layout/fragment_ten">
+
+        <argument
+            android:name="pageNumber"
+            app:argType="string"/>
+
+        <action
+            android:id="@+id/action_ten_to_one"
+            app:destination="@id/fragmentOne"/>
+    </fragment>
+
+
+
+</navigation>
