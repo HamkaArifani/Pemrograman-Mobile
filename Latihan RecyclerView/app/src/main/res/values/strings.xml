@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">RVExcersie</string>
+    <string name="action">Aksi</string>
+
+    <string name="itemtitle1">Item Pertama</string>
+    <string name="itemdesc1">Deskripsi Item Kesatu</string>
+    <string name="itemtitle2">Item Kedua</string>
+    <string name="itemdesc2">Deskripsi Item Kedua</string>
+    <string name="itemtitle3">Item Ketiga</string>
+    <string name="itemdesc3">Deskripsi Item Ketiga</string>
+    <string name="itemtitle4">Item Keempat</string>
+    <string name="itemdesc4">Deskripsi Item Keempat</string>
+    <string name="itemtitle5">Item Kelima</string>
+    <string name="itemdesc5">Deskripsi Item Kelima</string>
+
+</resources>
