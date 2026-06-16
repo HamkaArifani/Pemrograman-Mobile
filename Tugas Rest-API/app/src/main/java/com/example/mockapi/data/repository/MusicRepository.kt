@@ -1,4 +1,4 @@
 package com.example.mockapi.data.repository
 
-class MusicRepository {
+class MusicRepository() {
 }

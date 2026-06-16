@@ -9,8 +9,7 @@ import io.ktor.client.request.get
 class ApiService(private val client: HttpClient) {
     private val BASE_URL = "https://mobile-practice-mock-api.free.beeceptor.com"
 
-    suspend fun getMusic(): MusicResponse<MusicDto> {
+    suspend fun getMusic(): MusicResponse{
         return client.get("$BASE_URL/music").body()
     }
-
 }
