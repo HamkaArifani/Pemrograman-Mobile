@@ -6,7 +6,14 @@ import com.example.mockapi.model.Music
 
 class MusicRepository(private val apiService: ApiService){
 
-    suspend fun getMusicDetail(): Music {
-        return apiService.getMusic().data.toDomain()
+    suspend fun getMusicDetail(): Result<Music> {
+        return  try {
+            val response = apiService.getMusic()
+            val musicDomain = response.data.toDomain()
+            Result.success(musicDomain)
+        } catch (e: Exception){
+            e.printStackTrace()
+            Result.failure(e)
+        }
     }
 }
